@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+__pycache__
+
+build/
+{{ cookiecutter.project_name }}.egg-info
+{{ cookiecutter.project_name }}/*_thrift
