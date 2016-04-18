@@ -2,5 +2,6 @@
   "project_slug": "skeleton",
   "project_name": "reddit_service_{{ cookiecutter.project_slug }}",
   "service_name": "{{ cookiecutter.project_slug | capitalize }}Service",
-  "vagrant_guest_ip": "dhcp"
+  "vagrant_guest_ip": "dhcp",
+  "server_type": ["thrift", "pyramid"]
 }

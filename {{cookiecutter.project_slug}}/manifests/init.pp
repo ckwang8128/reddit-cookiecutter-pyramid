@@ -30,8 +30,12 @@ class {{ cookiecutter.project_slug }} {
      'python-pip',
      'python-gevent',
      'python-baseplate',
-     'python-pyramid',
      'einhorn',
+     {% if cookiecutter.server_type == 'pyramid' %}
+     'python-pyramid',
+     {% elif cookiecutter.server_type == 'thrift' %}
+     'thrift',
+     {%- endif %}
     ]:
       ensure  => installed,
       require => [
